@@ -19,6 +19,21 @@ def create_users (count, args = {})
   count.times { User.create(args); puts "Creating a user" }
 end
 
+def create_tweet (args = {})
+  Tweet.create(args)
+end
+
+def create_tweets(count, args)
+  if args.empty?
+    args["content"] ||= Faker::Lorem.paragraph
+
+    # a random user has the tweet
+    args["user_id"] ||= (1..User.count).to_a.sample(1)
+  end
+  count.times { create_tweet (args) }
+end
+
+def create_hash_tag
 
 
 

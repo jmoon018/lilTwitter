@@ -1,6 +1,6 @@
-class CreateFollowerFollowees < ActiveRecord::Migration
+class CreateFolloweeFollowers < ActiveRecord::Migration
   def change
-    create_table :follower_followees do |t|
+    create_table :followee_followers do |t|
       t.integer :follower_id
       t.integer :followee_id
 
