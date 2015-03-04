@@ -40,6 +40,12 @@
 
 
 
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +53,7 @@
 }
 
 body {
-  background-color: rgb(160, 215, 235)
+  background-color: rgb(160, 215, 235);
 }
 
 
@@ -102,15 +108,35 @@ body {
 
 
 /* HOME PAGE
+==================================
+==================================
 ==================================*/
+
+
+.home_box_title {
+  font-size: 1.1em;
+  color: gray;
+}
+
+.home_box_link {
+  font-size: 0.85em;
+  text-decoration: none;
+  color: rgb(80, 150, 200);
+}
 
 /* LEFT BAR */
 
 .left_bar {
   float: left;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   width: 300px; /* fixed width */
   padding: 10px;
 }
+
+
+
+/* PROFILE BOX
+==================================*/
 
 .profile_box {
   width: 100%;
@@ -166,9 +192,9 @@ body {
   position: relative;
   bottom: 35px;
   height: 90px;
-  
+
   clear: both;
- 
+
   border-top: 1px solid black;
 }
 
@@ -179,7 +205,7 @@ body {
 }
 
 .profile_box_category {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: gray;
 }
 
@@ -188,4 +214,57 @@ body {
   font-size: 1.25em;
   color: rgb(20, 120, 195);
   font-weight: bold;
+}
+
+/* TRENDS BOX
+==================================*/
+.trends_box {
+  float: left;
+
+  height: 225px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+  background-color: white;
+  border-radius: 10px;
+}
+
+.trends_box_list {
+  list-style-type: none;
+}
+
+.trends_box_list_item {
+  margin-top: 3px;
+}
+
+
+
+/* RIGHT BAR
+=======================================*/
+
+.right_bar {
+  float: right;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 300px; /* fixed width */
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* WHO TO FOLLOW BOX
+=======================================*/
+
+.follow_box {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.follow_box_account_title {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: black;
 }
