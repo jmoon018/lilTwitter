@@ -10,6 +10,182 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
+/* reset everything */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(160, 215, 235)
+}
+
+
+
+/* HEADER PORTION
+====================================== */
+
+
+.header_bar {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+}
+
+.header_bar_left_list {
+  float: left;
+  list-style-type: none;
+  height: 100%;
+}
+
+.header_bar_middle {
+  overflow: hidden;
+  height: 100%;
+}
+
+.header_bar_twitter_logo {
+  height: 100%;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.header_bar_right_list {
+  float: right;
+  list-style-type: none;
+  height: 100%;
+}
+
+.header_bar_list_item {
+  float: left;
+  font-size: 2em;
+  padding: 10px;
+
+  line-height: 100%;
+}
+
+.header_bar_list_item:hover {
+  background-color: rgb(220, 255, 255);
+  cursor: pointer;
+}
+
+
+/* HOME PAGE
+==================================*/
+
+/* LEFT BAR */
+
+.left_bar {
+  float: left;
+  width: 300px; /* fixed width */
+  padding: 10px;
+}
+
+.profile_box {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+}
+
+.profile_box_upper {
+  height: 50%;
+  width: 100%;
+  background-color: rgb(20, 120, 195);
+}
+
+.profile_box_image {
+  background-color: rgb(20, 120, 195);
+  border: 3px solid white;
+  border-radius: 10px;
+
+  width: 80px;
+  height: 80px;
+  position: relative;
+  bottom: 40px;
+  left: 10px;
+
+  float: left;
+}
+
+.profile_box_name_box {
+  position: relative;
+  top: 5px;
+  left: 15px;
+
+}
+
+.profile_box_name {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.profile_box_handle {
+  color: gray;
+  font-size: 0.85em;
+}
+
+
+.profile_box_categories {
+  position: relative;
+  bottom: 35px;
+  height: 90px;
+  
+  clear: both;
+ 
+  border-top: 1px solid black;
+}
+
+.profile_box_category_box {
+  padding: 10px;
+  width: 33%;
+  float: left;
+}
+
+.profile_box_category {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.profile_box_category_count {
+  margin-top: 5px;
+  font-size: 1.25em;
+  color: rgb(20, 120, 195);
+  font-weight: bold;
+}
